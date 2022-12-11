@@ -7,9 +7,9 @@
 /* betty style doc for function main goes there */
 /**
  * main - Entry point
- * 
+ *
  * Description: 'a program to check number is positive or negative'
- * 
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
