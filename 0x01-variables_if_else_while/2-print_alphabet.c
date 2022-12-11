@@ -15,10 +15,13 @@
 int main(void)
 {
 	char x;
+
 	for (x = 'A'; x <= 'Z'; x++)
 	{
 		char small = tolower(x);
+
 		putchar(small);
 	}
-	return 0;
+	putchar('\n');
+	return (0);
 }
