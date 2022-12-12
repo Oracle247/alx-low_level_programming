@@ -1,34 +1,35 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
 /**
  * main - Entry point
- *
- * Description: 'a program  that prints the alphabet in lowercase'
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int i;
-	int j;
-	for (i = 0; i <= 9; i++)
+	int d, p;
+
+	for (d = '0'; d < '9'; d++)
 	{
-		for (j = 0; j <= 9; j++)
+		for (p = d + 1; p <= '9'; p++)
 		{
-			if (j == i)
-				continue;
+			if (p != d)
+			{
+				putchar(d);
+				putchar(p);
 
-            putchar(i + '0');
-            putchar(j + '0');
-            putchar(',');
-            putchar(' ');
+				if (d == '8' && p == '9')
+					continue;
 
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
