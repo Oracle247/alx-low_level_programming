@@ -14,17 +14,13 @@
  */
 int main(void)
 {
-	char x;
+	int x;
 
-	for (x = 'A'; x <= 'Z'; x++)
-	{
-		char small = tolower(x);
+	for (x = 0; x < 10; x++)
+    {
+        printf("%d", x);
+    }
 
-		if (small == 'q' || small == 'e')
-			continue;
-			
-		putchar(small);
-	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
