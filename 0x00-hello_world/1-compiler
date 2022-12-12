@@ -2,7 +2,7 @@
 
 # Set the input and output file names
 INPUT_FILE=$CFILE
-OUTPUT_FILE="${INPUT_FILE%.*}.o"
+
 
 # Compile the C file without linking
 gcc -c $INPUT_FILE -o $OUTPUT_FILE
