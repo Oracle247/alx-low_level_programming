@@ -1,6 +1,4 @@
-
 #include <stdio.h>
-#include <ctype.h>
 
 /* more headers goes there */
 
@@ -12,17 +10,28 @@
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int i;
-
-	for (i = 0; i <= 15; i++)
+	int j;
+	int k;
+	for (i = 0; i <= 9; i++)
 	{
-		if (i < 10)
-			putchar(i + '0');
-		else
+		for (j = 0; j <= 9; j++)
 		{
-			putchar(i - 10 + 'a');
+			if (j == i)
+				continue;
+			for (k = 0; k <= 9; k++)
+			{
+				if (k == i || k == j)
+					continue;
+				putchar(i + '0');
+				putchar(j + '0');
+				putchar(k + '0');
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
