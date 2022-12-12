@@ -22,7 +22,7 @@ int main(void)
 
 		if (small == 'q' || small == 'e')
 			continue;
-			
+	
 		putchar(small);
 	}
 	putchar('\n');
